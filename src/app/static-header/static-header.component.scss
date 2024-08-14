@@ -1,0 +1,59 @@
+@import "../../../public/assets/variables";
+
+
+header {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    animation: header-animation 10s linear forwards;
+    animation-timeline: scroll();
+    padding: 1rem 0;
+    z-index: 10;
+    background-color: transparent;
+    top: 50px;
+
+    img {
+        height: 50px;
+
+        @media (min-width: $bp-md) {
+            height: 70px;
+        }
+    }
+
+
+    @media (min-width : $bp-md) {
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            justify-content: space-between;
+            font-size: 1.75rem;
+
+        }
+    }
+}
+
+
+@keyframes header-animation {
+
+    1% {
+        top: -10rem;
+        position: fixed;
+    }
+
+    10%,
+    100% {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        color: $primary;
+    }
+}
+
+@keyframes header-color {
+
+    5%,
+    100% {
+        color: $primary;
+    }
+}

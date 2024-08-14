@@ -1,0 +1,315 @@
+<app-header></app-header> b
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide let-owlItem>
+        <div class="single-homepage-slider homepage-bg-1">
+            <div class="container hero-content">
+                <div class="content">
+                    <h2 [@activeSlide]="owlItem.isActive ? 'active' : 'inActive'">Fresh from the Farm to Your Table</h2>
+                    <p [@activeSlideP]="owlItem.isActive ? 'active' : 'inActive'">Savor the crisp, delicious taste of
+                        our
+                        farm-fresh vegetables. Packed with nutrients and harvested at peak
+                        ripeness</p>
+                </div>
+
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide let-owlItem>
+        <div class="single-homepage-slider homepage-bg-2">
+            <div class="container hero-content">
+                <div class="content">
+                    <h2 [@activeSlide]="owlItem.isActive ? 'active' : 'inActive'">Elevate Your Senses with Pure
+                        Essential Oils
+                    </h2>
+                    <p [@activeSlideP]="owlItem.isActive ? 'active' : 'inActive'">Discover the natural power of our
+                        premium
+                        essential oils, crafted to enhance your well-being and bring
+                        tranquility to your life.</p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide let-owlItem>
+        <div class="single-homepage-slider homepage-bg-3">
+            <div class="container hero-content">
+                <div class="content">
+                    <h2 [@activeSlide]="owlItem.isActive ? 'active' : 'inActive'">Boost Your Nutrition with Vegetable
+                        Powders</h2>
+                    <p [@activeSlideP]="owlItem.isActive ? 'active' : 'inActive'">Maximize your health with our
+                        nutrient-rich
+                        vegetable powders, providing a concentrated dose of vitamins
+                        and minerals from nature’s
+                        bounty.</p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</owl-carousel-o>
+
+<section class="container section about-section" id="about">
+    <div class="section-content">
+        <div class="section-1">
+            <img src="assets/about.jpg">
+        </div>
+        <div class="section-2">
+            <h2 class="highlight-text">Welcome to Ace Multinational</h2>
+            <p>Your premier partner in the global trade of high-quality vegetables, essential oils, and vegetable
+                powders. Based in the vibrant city of Indore, Madhya Pradesh.
+            </p>
+            <p>We are dedicated to excellence,
+                sustainability, and delivering nature’s finest from farms and distilleries to markets around the world.
+                Each product is sourced and processed with the highest standards to ensure quality and safety.
+                Choose ACE MULTINATIONAL for quality assurance, sustainability, a global network, and exceptional
+                customer satisfaction.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container section products-section" id="products">
+    <h2 class="section-heading">What We Provide</h2>
+    <p class="sub-heading">Nature's best selections</p>
+    <div class="products">
+        <div class="product-item" (click)="goTo('/essential-oil')">
+            <img src="assets/products/essential-oil.jpg" alt="">
+            <div class="product-name">
+                <p>Essential Oils</p>
+            </div>
+        </div>
+        <div class="product-item" (click)="goTo('/vegetable-powder')">
+            <img src="assets/products/vegetable-powder.jpg" alt="">
+            <div class="product-name">
+                <p>Vegetable Powder</p>
+            </div>
+        </div>
+        <div class="product-item" (click)="goTo('/vegetable')">
+            <img src="assets/products/vegetables.jpg" alt="">
+            <div class="product-name">
+                <p>Vegetables</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container quick-contact">
+    <div class="contact-detail">
+        <img src="/assets/icons/call.svg" alt="" height="30px">
+        <div>
+            <h5>Call Us</h5>
+            <p>+91 781 703 0270</p>
+        </div>
+    </div>
+    <div class="contact-detail">
+        <p> GET IN TOUCH</p>
+    </div>
+    <div class="contact-detail">
+        <img src="/assets/icons/email.svg" alt="" height="20px">
+        <div>
+            <h5>Email Us</h5>
+            <p>info&#64;manoharInternational.com </p>
+        </div>
+    </div>
+</section>
+
+<section class="container section choose-info">
+    <h2 class="section-heading">Why Choose Ace International?</h2>
+    <p class="sub-heading">Unmatched Quality, Sustainability, and Global Reach</p>
+    <div class="quality-checks">
+        <div class="quality-item">
+            <div class="quality-head">
+                <img src="assets/icons/green-check.svg" alt="" srcset="">
+                <div class="quality-content">
+                    <h2>Quality Assurance</h2>
+                    <p>
+                        At ACE MULTINATIONAL, quality is our top priority. We implement
+                        stringent quality control measures at every stage of production and distribution to ensure that
+                        our
+                        products meet the highest standards. Our commitment to quality means you can trust us to deliver
+                        the
+                        best.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="quality-item">
+            <div class="quality-head">
+                <img src="assets/icons/green-check.svg" alt="" srcset="">
+                <div class="quality-content">
+                    <h2>Sustainability</h2>
+                    <p>
+                        Sustainability is at the core of our business model. We are committed to sourcing our
+                        products from farmers and producers who practice sustainable and ethical methods. This
+                        commitment not only helps protect the environment but also supports the livelihoods of local
+                        communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="quality-item">
+            <div class="quality-head">
+                <img src="assets/icons/green-check.svg" alt="" srcset="">
+                <div class="quality-content">
+                    <h2>Global Network</h2>
+                    <p>
+                        Our extensive global network of suppliers and distributors enables us to meet the
+                        diverse needs of our clients efficiently and effectively. With a presence in multiple countries,
+                        we can
+                        provide timely and reliable service, ensuring that our products reach you fresh and in perfect
+                        condition.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="quality-item">
+            <div class="quality-head">
+                <img src="assets/icons/green-check.svg" alt="" srcset="">
+                <div class="quality-content">
+                    <h2>Customer Satisfaction</h2>
+                    <p>
+                        We believe in building long-term relationships with our clients by offering
+                        exceptional customer service and products that exceed expectations. Our dedicated team is always
+                        ready to assist you with your needs, providing personalized service and support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container section promote-section">
+    <h2 class="section-heading">We Promote</h2>
+
+    <div class="promote-container">
+        <div class="promote-icon">
+            <img src="assets/promote/apeda-trans.svg" alt="" srcset="" height="150px">
+
+        </div>
+
+        <div class="promote-icon">
+            <img src="assets/promote/mii-trans.png" alt="" srcset="" height="150px">
+
+        </div>
+        <div class="promote-icon">
+
+            <img src="assets/promote/moc-trans.png" alt="" srcset="" height="150px">
+
+        </div>
+        <div class="promote-icon">
+
+            <img src="assets/promote/msme-trans.png" alt="" srcset="" height="150px">
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="parallax">
+    <div class="mission-container">
+        <div class="mission">
+            <div class="icon">
+                <img src="/assets/icons/mission.svg" height="40px" width="auto" />
+            </div>
+            <div>
+                <h3>Our Mission</h3>
+                <p>
+                    At ACE MULTINATIONAL, our mission is to provide premium quality products that enhance the
+                    health and well-being of our customers. We strive to ensure sustainable and ethical practices
+                    throughout our supply chain, bridging the gap between producers and consumers and fostering
+                    mutual growth.
+                </p>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="icon">
+                <img src="/assets/icons/vision.svg" height="40px" width="auto" />
+            </div>
+            <div>
+                <h3>Our Vision</h3>
+                <p>
+                    ACE MULTINATIONAL envisions being a global leader in providing premium, sustainably sourced products
+                    that enhance health and well-being. Through innovation and excellence, it aims to drive positive
+                    change and create lasting value for all stakeholders.
+                </p>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="icon">
+                <img src="/assets/icons/values.svg" height="40px" width="auto" />
+            </div>
+            <div>
+                <h3>Our Values</h3>
+                <p>
+                    At ACE MULTINATIONAL, our core values drive our commitment to excellence. We conduct our business
+                    with the utmost integrity, ensuring transparency and honesty in all our dealings. We also take our
+                    responsibility towards the environment and society seriously, striving to make a positive impact
+                    through sustainable practices.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact-section section">
+    <div class="contact container">
+        <p class="section-heading">Quick Enquiry</p>
+        <form class="w-100">
+            <div class="form-fields">
+                <div class="w-100 wrap-container">
+                    <div class="mb-3 w-100 group">
+                        <input type="text" id="name" required class="w-100" formControlName="name" />
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+                </div>
+                <div class="d-flex w-100 wrap-container">
+                    <div class="mb-3 w-100 group">
+                        <input name="contact" id="contact" required class="w-100" formControlName="contact" />
+                        <label for="contact" class="form-label">Contact</label>
+                    </div>
+                    <div class="mb-3 w-100 group">
+                        <input type="email" id="email" required class="w-100" formControlName="email" />
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+                </div>
+                <div class="d-flex w-100 wrap-container">
+                    <div class="mb-3 w-100 group">
+                        <textarea name="message" id="message" cols="30" rows="2" class="w-100" required
+                            formControlName="message"></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <p class="text-danger m-0 text-small" *ngIf="contactForm.invalid && contactForm.touched">Please enter valid
+                details!!
+            </p> -->
+            <div class="contact-footer">
+                <!-- <div class="alert alert-dismissible fade show" role="alert" [ngClass]="'alert-'+request.msg[0].severity"
+              *ngIf="request.msg.length">
+              {{request.msg[0].summary}}
+            </div> -->
+                <button class="submit-btn" type="submit">
+                    <div class="spinner-border" role="status">
+                    </div>
+                    Enquire
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+<div class="social-left social-fixed">
+    <a href="#"><img src="/assets/icons/facebook.svg" alt="" width="40px" height="40px" /> </a>
+    <a href="#"><img src="/assets/icons/instagram.svg" alt="" width="40px" height="40px" /></a>
+
+</div>
+
+<div class="social-right social-fixed">
+    <a href="#"><img src="/assets/icons/facebook.svg" alt="" width="40px" height="40px" /> </a>
+</div>

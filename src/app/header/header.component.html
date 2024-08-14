@@ -1,0 +1,31 @@
+<div class="top-contact">
+    <div class="contact-detail">
+        <img src="/assets/icons/call.svg" alt="" height="30px">
+        <div>
+            <h5>Call Us</h5>
+            <p>+91 781 703 0270</p>
+        </div>
+    </div>
+    <div class="contact-detail">
+        <img src="/assets/icons/email.svg" alt="" height="20px">
+        <div>
+            <h5>Email Us</h5>
+            <p>info&#64;manoharInternational.com </p>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <button class="btn-toggle" (click)="showMenu = !showMenu">
+            <span class="hamburger"></span>
+        </button>
+
+        <img src="/assets/logo.png">
+        <nav class="nav" [ngClass]="{'show' : showMenu}">
+            <ul class="menu">
+                <li class="menu-item" (click)="scrollTo('about')">About</li>
+                <li class="menu-item" (click)="scrollTo('products')">Products</li>
+            </ul>
+        </nav>
+    </div>
+</header>

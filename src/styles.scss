@@ -1,0 +1,163 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '../public/assets/variables';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    color: $text-color;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    ;
+    // background-color: lighten($primary, 60%);
+    background-color: #edf3e3;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.container {
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    [class*=owl-] {
+        background: none !important;
+    }
+
+    &:hover {
+        background: none !important;
+    }
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .content {
+        color: #fff;
+        line-height: 1.25;
+
+        h2 {
+            color: lighten($primary, 30%);
+            margin-bottom: 2rem;
+            font-size: 2.25rem;
+        }
+
+        p {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: $bp-md) {
+            width: 50%;
+        }
+
+        @media (min-width:$bp-lg) {
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.section {
+    margin: 6rem auto;
+
+    @media (min-width: $bp-md) {
+        margin: 9rem auto;
+    }
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: $heading-color;
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    @media (min-width : $bp-sm) and (max-width: $bp-md) {
+        font-size: 2rem;
+    }
+
+    @media (min-width : $bp-md) {
+        margin-bottom: 1.75rem;
+    }
+}
+
+.sub-heading {
+    font-size: 1.25rem;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 1.5rem;
+
+    @media (min-width : $bp-md) {
+        margin-bottom: 6rem;
+    }
+
+}
+
+
+.section-content {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}

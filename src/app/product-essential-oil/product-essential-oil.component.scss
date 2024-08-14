@@ -1,0 +1,149 @@
+@import "../../../public/assets/variables";
+
+.hero-img {
+    background-image: url('/assets/essential-oil-hero.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .content {
+        h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: $bp-md) {
+
+        padding-left: 4rem;
+
+        .content {
+            width: 50%;
+        }
+    }
+}
+
+.core-products {
+    .section-heading {
+        margin-bottom: 5rem;
+    }
+
+    .product-item {
+        margin: 2rem 0;
+        margin-bottom: 3rem;
+
+        .product-detail {
+            .product-title {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .product-desc {
+                margin-bottom: 1.5rem;
+            }
+
+            .product-extra {
+                display: grid;
+                column-gap: 0.5rem;
+                row-gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-bottom: 1rem;
+            }
+
+            .product-application {
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (min-width: $bp-md) {
+            display: flex;
+            gap: 2rem;
+
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.products-section {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+    }
+}
+
+.products-section {
+    .product-item {
+        position: relative;
+        margin-bottom: 2rem;
+
+        .product-name {
+            position: absolute;
+            top: 70%;
+            width: 100%;
+            height: 25%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            color: #fff;
+            z-index: 1;
+            letter-spacing: 1px;
+
+            @media (min-width : $bp-lg) {
+                font-size: 2rem;
+            }
+        }
+
+        img {
+            opacity: 1;
+            width: 100%;
+            border-radius: 10px;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 98%;
+            background: black;
+            opacity: 0.2;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
