@@ -86,33 +86,6 @@ export class ProductVegetablePowderComponent {
     },
 
     {
-      name: 'Dehydrated Beetroot',
-      details: {
-        forms: {
-          label: 'Forms',
-          value: 'Flakes, Powder, Granuels, Minced'
-        },
-        shelfLife: {
-          label: 'Shelf Life',
-          value: '24 Months',
-        },
-        packing: {
-          label: 'Packing',
-          value: `20Kg's & 25kg's Inner Poly-liner with PP bags as well as customized packing available`,
-        },
-        moq: {
-          label: 'MOQ',
-          value: '200kgs',
-        },
-        sizes: {
-          label: 'Sizes',
-          value: 'Flakes (5*5mm) Minced ( 1-3mm, 2-4mm, 3-5mm & above ) , Granules ( 0.2-0.10mm & below ) , Powder ( 120 mesh, 100mesh, 80mesh )',
-        },
-      },
-      img: 'dehydrated-beet.jpg'
-    },
-
-    {
       name: 'Dehydrated Garlic',
       details: {
         forms: {
