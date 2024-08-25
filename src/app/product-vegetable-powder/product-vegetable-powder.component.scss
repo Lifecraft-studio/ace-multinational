@@ -1,0 +1,43 @@
+@import "../../../public/assets/variables";
+
+.hero-img {
+    background-image: url('/assets/vegetable-powder-hero.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .content {
+        h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: $bp-md) {
+
+        padding-left: 4rem;
+
+        .content {
+            width: 50%;
+        }
+    }
+
+
+    @media (min-width: $bp-sm) and (max-width: $bp-md) {
+        h2 {
+            font-size: 2.25rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        p {
+            font-size: 1.25rem !important;
+        }
+    }
+}

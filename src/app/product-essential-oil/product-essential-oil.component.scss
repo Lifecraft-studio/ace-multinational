@@ -28,6 +28,12 @@
             width: 50%;
         }
     }
+
+    @media (min-width: $bp-sm) and (max-width: $bp-md) {
+        p {
+            font-size: 1.25rem !important;
+        }
+    }
 }
 
 .core-products {

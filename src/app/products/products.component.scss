@@ -1,0 +1,17 @@
+@import "../../../public/assets/variables";
+
+.products {
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: lighten($primary, 30%);
+
+  @media (min-width: $bp-sm) and (max-width: $bp-md) {
+    padding: 1rem 0.5rem !important;
+  }
+
+  @media (min-width: $bp-md) and (max-width: $bp-lg) {
+    padding: 2rem 5rem !important;
+  }
+}

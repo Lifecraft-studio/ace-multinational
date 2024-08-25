@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-img">
+      <img [src]="imgPrefix + productDetails.img" class="product-img" />
+    </div>
+    <div class="product-desc">
+      <h2 class="product-name">{{ productDetails.name }}</h2>
+      @if(productDetails.details){
+      <h3>Product Description</h3>
+      <div class="parent spec">
+        @for (item of productDetails.details| keyvalue; track $index) {
+        <div>
+          <p class="spec-heading">{{ $any(item.value)['label'] }}</p>
+          <p>{{ $any(item.value)['value'] }}</p>
+        </div>
+        }
+      </div>
+      }
+      <p>
+        {{ productDetails.description }}
+      </p>
+    </div>
+  </div>
+</div>
