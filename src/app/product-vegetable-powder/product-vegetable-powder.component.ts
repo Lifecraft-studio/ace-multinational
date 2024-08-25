@@ -40,7 +40,7 @@ export class ProductVegetablePowderComponent {
     },
 
     {
-      name: 'Dehydrated cabbage',
+      name: 'Dehydrated Cabbage',
       details: {
         forms: {
           label: 'Forms',
@@ -200,7 +200,7 @@ export class ProductVegetablePowderComponent {
           label: 'Forms',
           value: 'Flakes, Powder, Minced, Chopped, Toasted & Fried Dehydrated Onion'
         },
-        
+
         packing: {
           label: 'Packing',
           value: `12Kg's & 14kg's Inner Poly-liner with PP bags as well as customized packing available`,
@@ -348,7 +348,7 @@ export class ProductVegetablePowderComponent {
       img: 'dehydrated-curry.jpg'
     },
 
-    
+
     {
       name: 'Dehydrated French Beans',
       details: {

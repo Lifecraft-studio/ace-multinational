@@ -1,0 +1,62 @@
+@import "../../../public/assets/variables";
+
+.hero-img {
+    background-image: url('/assets/vegetable-hero.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    .content {
+        h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: $bp-md) {
+
+        padding-left: 4rem;
+
+        .content {
+            width: 50%;
+        }
+    }
+
+
+    @media (min-width: $bp-sm) and (max-width: $bp-md) {
+        h2 {
+            font-size: 2.25rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        p {
+            font-size: 1.25rem !important;
+        }
+    }
+}
+
+.section-content {
+    font-size: 1.5rem;
+
+    @media (min-width: $bp-md) {
+        display: flex;
+        gap: 3rem;
+
+        .img-container {
+            width: 35%;
+            display: flex;
+        }
+
+        .desc {
+            width: 65%;
+        }
+    }
+}
