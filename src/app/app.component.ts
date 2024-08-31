@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { LandingComponent } from "./landing/landing.component";
 import { FooterComponent } from "./footer/footer.component";
@@ -14,5 +14,16 @@ import { FooterComponent } from "./footer/footer.component";
 })
 export class AppComponent {
   title = 'ace-international';
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.router.events.subscribe((event: any) => {
+      if (!(event instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 
 }
