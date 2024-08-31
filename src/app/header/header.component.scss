@@ -66,6 +66,30 @@ header {
     }
 }
 
+.action-btn {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding:0.25rem;
+    border-radius: 10px;
+    animation: header-button-color 10s linear forwards;
+                animation-timeline: scroll();
+
+                
+    
+    a{
+        text-decoration: none;
+        color: $primary;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        animation: header-button-text-color 10s linear forwards;
+                animation-timeline: scroll();
+    }
+}
+
 .btn-toggle {
     position: absolute;
     left: 0;
@@ -154,5 +178,22 @@ header {
     5%,
     100% {
         color: $primary;
+    }
+}
+
+@keyframes header-button-color {
+
+    5%,
+    100% {
+        background-color: $primary;
+    }
+}
+
+
+@keyframes header-button-text-color {
+
+    5%,
+    100% {
+        color: #fff;
     }
 }

@@ -237,14 +237,20 @@
 
     font-size: 1rem;
     display: grid;
-    gap: 1.25rem;
+    gap: 1rem;
     border: 1px solid;
-    align-items: center;
+    border-radius: 10px;
+    background-color: $primary;
+    padding: 1rem;
 
     .contact-detail {
+        width: 100%;
         display: flex;
+        background-color:#fff;
         gap: 1rem;
         padding: 1rem;
+        border-radius: 10px;
+        align-items: center;
 
 
         &:nth-child(2n) {
@@ -265,14 +271,7 @@
         width: 50%;
 
         .contact-detail {
-            &:first-child {
-                border-right: 1px solid $primary;
-            }
-
-            &:last-child {
-                border-left: 1px solid $primary;
-            }
-
+            border: 1px solid $primary;
             order: 1 !important;
         }
 
