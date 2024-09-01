@@ -263,6 +263,10 @@
         &:nth-child(2n+1) {
             order: 2;
         }
+
+        p {
+            word-break: break-word;
+        }
     }
 
     @media (min-width: $bp-md) {
